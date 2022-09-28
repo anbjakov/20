@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     entry: './src/js/index.js',
     module: {
@@ -26,7 +27,8 @@ module.exports = {
                 title: 'To do',
                 template: path.resolve(__dirname,"./src/template.html")
             }
-        )
+        ),
+        new CleanWebpackPlugin(),
     ],
     mode:  process.env.NODE_ENV ==="production" ? 'production':'development',
 }
