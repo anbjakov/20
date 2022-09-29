@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
@@ -22,7 +23,6 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.1",
-    "bootstrap-icons": "^1.9.1",
-    "clean-webpack-plugin": "^4.0.0"
+    "bootstrap-icons": "^1.9.1"
   }
 }
